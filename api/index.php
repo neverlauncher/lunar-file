@@ -53,7 +53,7 @@
 			}
 			require('phpqrcode/qrlib.php');
 			// error correction L should be best in theory, but from quickly/subjective testing in practice, H seems better? Choose a middle ground... none of the options were clearly bad.
-			QRcode::png('https://dro.pm/' . $_GET['code'], false, 'M', 8, 2);
+			QRcode::png('https://neverlauncher.github.io/lunar-file/' . $_GET['code'], false, 'M', 8, 2);
 			exit;
 
 		default:
