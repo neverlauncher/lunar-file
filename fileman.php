@@ -24,7 +24,7 @@
 	if (empty($_GET['secret'])) {
 		if (strpos($_SERVER['HTTP_USER_AGENT'], 'cli') === 0 || strpos($_SERVER['HTTP_USER_AGENT'], 'dro.pm-androidapp') === 0) {
 			list($secret, $key) = allocate();
-			$retval = htmlspecialchars($secret) . ' dro.pm/' . htmlspecialchars($key);
+			$retval = htmlspecialchars($secret) . ' neverlauncher.github.io/lunar-file/' . htmlspecialchars($key);
 		}
 		else {
 			die('Missing required parameter.');
